@@ -1,0 +1,54 @@
+body {
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: url('https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg') center center/cover no-repeat;
+    filter: blur(1px) brightness(0.8);
+}
+h1 {
+    color: #ff4646;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.accept {
+    background-color: #4caf50;
+    color: white;
+}
+
+button.accept:hover {
+    background-color: #45a049;
+}
+
+button.reject {
+    background-color: #f44336;
+    color: white;
+    position: relative;
+}
+
+button.reject:hover {
+    background-color: #e53935;
+}
