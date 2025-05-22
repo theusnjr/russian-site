@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const rejectButton = document.getElementById('reject');
 
     acceptButton.addEventListener('click', () => {
-        alert('Você aceitou o pedido de namoro! ❤️');
+        alert('вы приняли запрос! ❤️');
     });
 
     // Remove o alerta do botão de rejeitar
     rejectButton.addEventListener('click', () => {
-        alert('Você recusou o pedido de namoro. 😢');
+        alert('😢');
     });
 
     // Função para mover o botão para um local aleatório
